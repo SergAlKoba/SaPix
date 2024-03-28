@@ -1,13 +1,12 @@
-@import "libs/button";
 @import "libs/header";
 @import "libs/footer";
-@import "libs/fonts";
 @import "libs/fontello";
 @import 'libs/normalize';
 
 body {
     min-height: 100vh;
     position: relative;
+    background: #000;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
@@ -98,48 +97,40 @@ a {
 
 .container {
     width: 100%;
-    padding: 0 15px;
+    padding: 0 20px;
     margin: 0 auto;
     position: relative;
+    @media (min-width: 768px) {
 
-}
+        padding: 0 40px;
 
-@media (min-width: 768px) {
-
-    .container {
-        width: 648px;
-        padding: 0;
     }
-
-}
-
-@media (min-width: 1024px) {
-
-    .container {
-        width: 864px;
-    }
-
-}
-
-@media (min-width: 1280px) {
-
-    .container {
-        width: 1080px;
-    }
-
-}
-
-@media (min-width: 1400px) {
-
-    .container {
-        width: 1240px;
-    }
-
-}
-
-
-@media (min-width: 1600px) {
-
+    @media (min-width: 1024px) {
     
-
+        padding: 0 60px;
+    
+    }
+    @media (min-width: 1280px) {
+    
+        padding: 0 80px;
+    
+    }
+    @media (min-width: 1400px) {
+    
+        padding: 0 100px;
+    
+    }
+    @media (min-width: 1720px) {
+    
+        padding: 0 110px;
+    
+    }
+    @media (min-width: 2360px) {
+    
+        padding: 0 160px;
+    
+    }
 }
+
+
+
